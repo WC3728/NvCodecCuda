@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.6)
 
 project(test)
 set(CMAKE_CXX_STANDARD 11)
-# set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/workspace)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../workspace)
 set(CUDA_GEN_CODE "-gencode=arch=compute_75,code=sm_75")
 
 # 如果你的opencv找不到，可以自己指定目录
@@ -54,13 +54,13 @@ add_custom_target(
 add_custom_target(
     demuxer
     DEPENDS main
-    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/workspace
+    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/../workspace
     COMMAND ./main demuxer
 )
 
 add_custom_target(
     hard_decode
     DEPENDS main
-    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/workspace
+    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/../workspace
     COMMAND ./main hard_decode
 )

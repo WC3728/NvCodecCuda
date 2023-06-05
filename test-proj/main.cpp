@@ -6,17 +6,12 @@ using namespace cuvid;
 
 int main(int argc, char** argv){
     
-    std::string uri = "/home/bckj/桌面/NvCodecCuda/workspace/exp/circles.mp4";
+    std::string uri = "NvCodecCuda/workspace/exp/circles.mp4";
     const char* method = "yolo";
-    std::string modelFile = "";
+    std::string modelFile = "yolov5s";
     if(argc > 1){
         method = argv[1];
     }
-
-    if (argc > 2){
-        modelFile += argv[2];
-    }
-
 
     if(strcmp(method, "demuxer") == 0){
         cuvid::AppDemuxer(uri);
