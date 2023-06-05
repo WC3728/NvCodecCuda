@@ -1,0 +1,65 @@
+# compressed files
+*.tar.gz
+*.zip
+
+# temp tensor and data
+*.tensor
+*.data
+
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+/objs
+
+*.trtmodel
+
+/workspace/pro
+/build
+/test-proj/build
+/install
+/.vs
+*.pyd
+*.zip
+*.pdb
+*.ilk
+*.lib
+*.exp
+
+/workspace/*.json
+/workspace/*.png
+/workspace/imgs
+/workspace/hard
+/workspace/soft
+
+/Video_Codec_SDK_12.1.14

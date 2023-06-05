@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/intel/openvino_2022/opencv/include/**",
+                "/usr/local/include/TensorRT/include/**",
+                "/usr/local/cuda/include/**",
+                "/usr/local/cuda/include",
+                "/usr/local/ffmpeg/include/**",
+                "/opt/intel/openvino_2022.3.0/opencv/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
